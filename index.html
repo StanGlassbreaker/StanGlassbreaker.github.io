@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>私の物語</title>
+  <!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+<!-- Optional theme -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+<link rel="stylesheet" type="text/css" href="style.css?version=9.9"/>
+
+</head>
+
+
+
+
+
+
+<body>
+  <div id="main1">
+    <div id="button"><a href="main3.html">
+      My Story
+    <div id="fill"></div></a>
+    </div>
+   <h1>閑さや岩にしみ入る蝉の声</h1>
+  </div>
+
+  <div id="main2">
+    <div id="button2"><a href="main2.html">
+      My Works
+      <div id="fill2"></div></a>
+    </div>
+  <h1>雲霧の暫時百景を尽しけり</h1>
+
+  </div>
+  <div id="main3">
+    <div id="button3"><a href="main1.html">
+      My Videos
+      <div id="fill3"></div></a>
+    </div>
+  <h1>涼風の曲がりくねって来たりけり</h1>
+  </div>
+
+
+
+  <script   src="https://code.jquery.com/jquery-1.12.4.min.js"   integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ="
+    crossorigin="anonymous"></script>
+  <script type="text/css" src="scripts/js"></script>
+
+  <script>
+
+  $(document).ready(function(){
+
+  position = $("#button").offset();
+
+  $("#button").on("mouseenter",function(e){
+
+      mouseX = e.pageX;
+      mouseY = e.pageY;
+
+      relMouseX = mouseX - position.left;
+      relMouseY = mouseY - position.top;
+
+      $("#fill").css({left:relMouseX, top:relMouseY});
+      $("#fill").animate({height:'400px',width:'400px'},500);
+  });
+
+  $("#button").on("mouseleave", function(e){
+
+      mouseX = e.pageX;
+      mouseY = e.pageY;
+
+      relMouseX = mouseX - position.left;
+      relMouseY = mouseY - position.top;
+
+      $("#fill").animate({height:'0px',width:'0px',left:relMouseX,top:relMouseY},400);
+});
+
+  offset2 = $("#button2").offset();
+
+  $("#button2").on("mouseenter",function(b){
+
+      mouseX = b.pageX;
+      mouseY = b.pageY;
+
+      relMouseX = mouseX - offset2.left;
+      relMouseY = mouseY - offset2.top;
+
+      $("#fill2").css({left:relMouseX, top:relMouseY});
+      $("#fill2").animate({height:'400px',width:'400px'},500);
+  });
+
+  $("#button2").on("mouseleave", function(b){
+
+      mouseX = b.pageX;
+      mouseY = b.pageY;
+
+      relMouseX = mouseX - offset2.left;
+      relMouseY = mouseY - offset2.top;
+
+      $("#fill2").animate({height:'0px',width:'0px',left:relMouseX,top:relMouseY},400);
+  });
+
+
+  offset3 = $("#button3").offset();
+
+  $("#button3").on("mouseenter",function(c){
+
+      mouseX = c.pageX;
+      mouseY = c.pageY;
+
+      relMouseX = mouseX - offset3.left;
+      relMouseY = mouseY - offset3.top;
+
+      $("#fill3").css({left:relMouseX, top:relMouseY});
+      $("#fill3").animate({height:'400px',width:'400px'},500);
+  });
+
+  $("#button3").on("mouseleave",function(c){
+
+      mouseX = c.pageX;
+      mouseY = c.pageY;
+
+      relMouseX = mouseX - offset3.left;
+      relMouseY = mouseY - offset3.top;
+
+      $("#fill3").animate({height:'0px',width:'0px',left:relMouseX,top:relMouseY},400);
+  });
+});
+
+
+
+
+  </script>
+
+
+
+</body>

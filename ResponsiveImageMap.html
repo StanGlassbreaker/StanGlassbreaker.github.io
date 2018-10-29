@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+
+
+
+<style>
+img {width: 100%; height: auto;}
+</style>
+
+<body>
+<div>
+  <img src="Images/sunsystem.jpg" usemap="#sunsystem">
+  <map name="sunsystem">
+      <area target="" alt="Меркурий" title="Меркурий" href="https://ru.wikipedia.org/wiki/Меркурий" coords="479,806,33" shape="circle">
+      <area target="" alt="Венера" title="Венера" href="https://ru.wikipedia.org/wiki/Венера" coords="657,732,51" shape="circle">
+      <area target="" alt="Земля" title="Земля" href="https://ru.wikipedia.org/wiki/Земля" coords="843,625,51" shape="circle">
+      <area target="" alt="Марс" title="Марс" href="https://ru.wikipedia.org/wiki/Марс" coords="970,510,44" shape="circle">
+      <area target="" alt="Юпитер" title="Юпитер" href="https://ru.wikipedia.org/wiki/Юпитер" coords="1291,555,125" shape="circle">
+      <area target="" alt="Сатурн" title="Сатурн" href="https://ru.wikipedia.org/wiki/Сатурн" coords="1612,400,99" shape="circle">
+      <area target="" alt="Уран" title="Уран" href="https://ru.wikipedia.org/wiki/Уран_(планета)" coords="1861,267,69" shape="circle">
+      <area target="" alt="Нептун" title="Нептун" href="https://ru.wikipedia.org/wiki/Нептун" coords="2073,148,70" shape="circle">
+      <area target="" alt="Плутон" title="Плутон" href="https://ru.wikipedia.org/wiki/Плутон" coords="2232,49,23" shape="circle">
+  </map>
+</div>
+
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+	<script type="text/javascript" src="image-map-resizer-master/js/imageMapResizer.js"></script>
+	<script type="text/javascript">
+
+		$('map').imageMapResize();
+
+	</script>
+</body>
+</html>

@@ -1,0 +1,349 @@
+body {
+margin: 0px;
+padding:0px;
+height: 200%;
+background-color: #00000
+}
+
+h1 {
+font-family: serif;
+font-size: 80px;
+color: white;
+margin:0px;
+text-align: center;
+display: table-cell;
+vertical-align: bottom;
+
+}
+
+.image-map {
+border:none;
+height: auto;
+max-width: 100%;
+width: auto;
+}
+
+
+ul {
+     list-style-type: none;
+     margin: 0;
+     padding: 0;
+     overflow: hidden;
+
+}
+
+li {
+      float: left;
+}
+
+iframe {
+      margin-top: 0;
+      display: block;
+      color: white;
+      text-align: center;
+      padding: 16px;
+      border-radius: 50px;
+      align: center;
+}
+
+.rotate {
+transform: rotate(180deg);
+}
+.rotate1 {
+  transform: rotate(90deg);
+}
+
+
+#main1 {
+
+height: 100vh;
+width: 100%;
+background-image: url(Images/Pagoda.jpg);
+background-size: cover;
+display: table;
+background-attachment: fixed
+}
+
+#main2 {
+
+height: 100vh;
+width: 100%;
+background-image: url(Images/Earth.jpg);
+background-size: cover;
+display: table;
+background-attachment: fixed
+}
+
+#main3 {
+height: 100vh;
+width: 100%;
+background-image: url(Images/FujiTop.jpg);
+background-size: cover;
+display: table;
+background-attachment: fixed
+}
+
+#button {
+height: 50px;
+width: 150px;
+border: 2px solid white;
+font-family: serif;
+font-style: oblique;
+font-size: 30px;
+color: white;
+text-align:center;
+line-height: 50px;
+border-radius: 50px;
+position: absolute;
+top: 5%;
+left: 50%;
+transform: translate(-50%, -50%);
+overflow: hidden;
+z-index: 99;
+cursor: pointer;
+}
+
+#button2 {
+
+height: 50px;
+width: 150px;
+border: 2px solid white;
+font-family: serif;
+font-style: oblique;
+font-size: 30px;
+color: white;
+text-align:center;
+line-height: 50px;
+border-radius: 50px;
+position: absolute;
+top: 105%;
+left: 50%;
+transform: translate(-50%, -50%);
+overflow: hidden;
+z-index: 99;
+cursor: pointer;
+
+}
+
+#button3 {
+
+  height: 50px;
+  width: 150px;
+  border: 2px solid white;
+  font-family: serif;
+  font-style: oblique;
+  font-size: 30px;
+  color: white;
+  text-align:center;
+  line-height: 50px;
+  border-radius: 50px;
+  position: absolute;
+  top: 205%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  overflow: hidden;
+  z-index: 99;
+  cursor: pointer;
+
+
+
+}
+
+
+#bentstlink {
+
+  height: 50px;
+  width: 150px;
+  border: 2px solid white;
+  font-family: serif;
+  font-style: oblique;
+  font-size: 30px;
+  color: white;
+  text-align:center;
+  line-height: 50px;
+  border-radius: 50px;
+  position: absolute;
+  top: 90%;
+  left: 52%;
+  transform: translate(-50%, -50%);
+  overflow: hidden;
+  z-index: 99;
+  cursor: pointer;
+
+
+}
+
+#fill {
+height: 0px;
+width: 0px;
+background-image: url(Images/Samurai2.jpg);
+border-radius: 50%;
+position: absolute;
+top:50%;
+left:50%;
+transform: translate(-50%, -50%);
+z-index: 1;
+
+}
+
+#fill2 {
+
+height: 0px;
+width: 0px;
+background-image: url(Images/meFuji.jpg);
+border-radius: 50%;
+position: absolute;
+top: 50%;
+left:50%;
+transform: translate(-50%, -50%);
+z-index: 1;
+
+}
+
+
+#fill3 {
+
+  height: 0px;
+  width: 0px;
+  background-image: url(Images/Samurai2.jpg);
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  left:50%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+
+}
+
+
+#fill4 {
+  height: 0px;
+  width: 0px;
+  background-image: url(Images/logo.jpg);
+  border-radius: 50%;
+  position: absolute;
+  top:50%;
+  left:50%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+}
+
+
+
+#glasses {
+height: 100vh;
+width: 100%;
+background-image: url(Images/me.jpg);
+background-size: 100% 100%;
+z-index: -1;
+}
+
+
+#worktable {
+  height: 100vh;
+  width: 100%;
+  background-image: url(Images/worktable.jpg);
+  background-size: 100% 100%;
+  z-index: -1;
+}
+
+#mainbox {
+  width: 14%;
+  height: 10%;
+  position: absolute;
+  overflow: hidden;
+  top: 74%;
+  left: 45%;
+}
+#imagebox{
+  width: 300%;
+  position: relative;
+  left: 0;
+  z-index: 1;
+  animation: slidemove 30s infinite;
+}
+#imagebox img{
+  width: 33.33%;
+  float: left;
+  position: relative;
+}
+
+@-webkit-keyframes slidemove{
+  0%{
+    left: 0;
+  }
+  25%{
+    left: -100%;
+  }
+  50%{
+    left: -200%;
+  }
+  75%{
+    left: -100%;
+  }
+  100%{
+    left: 0;
+  }
+}
+
+#glasses1 {
+  width: 50%;
+  height: 12%;
+  position: absolute;
+  overflow: hidden;
+  top: 63.7%;
+  left: 10%;
+  z-index: 99;
+}
+
+
+#leftglass {
+left: 28.5;
+transform: rotateY(180deg);
+}
+
+
+#rightglass {
+height:11.4%;
+width: 51%;
+position: relative;
+top:52.5%;
+left: 9.5%;
+background-color: violet;
+-webkit-clip-path:polygon(94% 15%,95% 33%,94% 64%,90% 81%,84% 94%,75% 97%,
+  69% 93%,64% 85%,60% 72%,57% 57%,55% 35%,57% 19%,61% 11%,
+  68% 5%,76% 3%,85% 4%);
+cursor: pointer;
+}
+
+#leftglass {
+  height:11.4%;
+  width: 52%;
+  position: relative;
+  top:64.3%;
+  left: 9.89%;
+  background-color: violet;
+  -webkit-clip-path:polygon(94% 15%,95% 33%,94% 64%,90% 81%,84% 94%,75% 97%,
+    69% 93%,64% 85%,60% 72%,57% 57%,55% 35%,57% 19%,61% 11%,
+    68% 5%,76% 3%,85% 4%);
+   cursor: pointer;
+}
+
+
+#mobilevideo {
+
+height: 100px;
+width: 100px;
+position: absolute;
+top:140%;
+left: 15%;
+
+}
+
+
+#vidbent {
+position:inherit;
+top: 0;
+left: 0;
+z-index: 2;
+}

@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>私の物語</title>
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+  <!-- Optional theme -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+
+<script type="text/css" src="scripts/js"></script>
+
+<style>
+img {width: 100%; height: auto;}
+</style>
+
+  <link rel="stylesheet" type="text/css" href="style.css?version=9.9"/>
+
+</head>
+
+
+<body>
+
+   <div id="button">
+     <a href="index.html">
+       Main
+     <div id="fill4"></div></a>
+   </div>
+
+     <div id="worktable">
+       <div id="mainbox">
+         <div id="imagebox">
+            <a href=https://www.instagram.com/bentstone/>
+           <img src="Images/unnamed.jpg" height="100%" width="100%" alt="">
+           <img src="Images/unnamed-3copy.jpg" height="100%" width="150%" alt="">
+           <img src="Images/unnamed-2.jpg" height="100%" width="100%" alt=""><a/>
+         </div>
+       </div>
+     </div>
+
+
+
+
+  <script   src="https://code.jquery.com/jquery-1.12.4.min.js"   integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ="
+       crossorigin="anonymous"></script>
+
+
+  <script type="text/javascript" src="image-map-resizer-master/js/imageMapResizer.js"></script>
+	<script type="text/javascript">
+
+		$('map').imageMapResize();
+
+	</script>
+
+
+
+    <script>
+
+    $(document).ready(function(){
+
+    offset = $("#button").offset();
+
+    $("#button").on("mouseenter",function(t){
+
+        mouseX = t.pageX;
+        mouseY = t.pageY;
+
+        relMouseX = mouseX - offset.left;
+        relMouseY = mouseY - offset.top;
+
+        $("#fill4").css({left:relMouseX, top:relMouseY});
+        $("#fill4").animate({height:'400px',width:'400px'},500);
+    });
+
+    $("#button").on("mouseleave", function(t){
+
+        mouseX = t.pageX;
+        mouseY = t.pageY;
+
+        relMouseX = mouseX - offset.left;
+        relMouseY = mouseY - offset.top;
+
+        $("#fill4").animate({height:'0px',width:'0px',left:relMouseX,top:relMouseY},400);
+    });
+    });
+
+    </script>
+
+
+</body>

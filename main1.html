@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>私の物語</title>
+
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+  <!-- Optional theme -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+
+
+<script type="text/css" src="scripts/js"></script>
+
+
+  <script>
+
+  function sheetLoaded() {
+    console.log("An error occured")
+  }
+  </script>
+  <link rel="stylesheet" type="text/css" href="style.css?version=9.8"/>
+
+</head>
+
+
+
+
+
+  <body>
+
+    <div id="button">
+    <a href="index.html">
+      Main
+      <div id="fill"></div></a>
+    </div>
+    <div id="glasses">
+    <div id="glasses1">
+    <img src="Images/Sunglasses3.png" height="100%" width="100%" alt="">
+    </div>
+    <div id="leftglass" height="100%" width="100%">
+      <video id="fuji" src="Videos/carp.mp4"
+        height="150%" width="150%" muted="muted"
+         autoplay loop/>
+      </video>
+    </div>
+    <div id="rightglass">
+    <video id="fuji" src="Videos/carp.mp4"
+      height="150%" width="150%" muted="muted"
+      autoplay loop/>
+    </video>
+    </div>
+    <ul>
+      <li><iframe width="250" height="150" src="https://www.youtube.com/embed/96mYv_gq-go" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe></li>
+      <li><iframe width="250" height="150" src="https://www.youtube.com/embed/wmhDMaGqbt8" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe></li>
+      <li></li>
+      <li></li>
+      <li></li>
+    </ul>
+  </div>
+  </body>
+
+
+  <script src="https://code.jquery.com/jquery-1.12.4.min.js"   integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ="
+    crossorigin="anonymous"></script>
+
+    <script>
+
+    function set_body_height() {
+
+     $('body').height($(window).height());
+    }
+    $(document).ready(function() {
+     $(window).bind('resize', set_body_height);
+     set_body_height();
+    });
+
+    $(document).ready(function(e)
+    {
+      $('#glasses1').attr('href', 'https://www.youtube.com/watch?v=96mYv_gq-go');
+    });
+
+    </script>
+
+  </html>
